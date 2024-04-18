@@ -22,6 +22,7 @@ const NavBar = () => {
           <Nav.Link as={NavLink} to="/singleton" end>Singleton</Nav.Link>
           <Nav.Link as={NavLink} to="/decorator" end>Decorator</Nav.Link>
           <Nav.Link as={NavLink} to="/observer" end>Observer</Nav.Link>
+          <Nav.Link as={NavLink} to="/strategy" end>Strategy</Nav.Link>
         </Nav>
       </Container>
     </Navbar>

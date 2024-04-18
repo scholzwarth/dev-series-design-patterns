@@ -51,6 +51,7 @@ const requests = {
 
 const breweries = {
   getRichmondBreweries: async () => requests.get('https://api.openbrewerydb.org/v1/breweries?by_city=richmond&by_state=virginia'),
+  getHenricoBreweries: async () => requests.get('https://api.openbrewerydb.org/v1/breweries?by_city=henrico&by_state=virginia'),
 };
 
 

@@ -13,6 +13,10 @@ import FactoryPage from './pages/FactoryPage';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SingletonPage from './pages/SingletonPage';
+import DecoratorPage from './pages/DecoratorPage';
+import ObserverPage from './pages/ObserverPage';
+import StrategyPage from './pages/StrategyPage';
+
 
 function App() {
   useVH();
@@ -24,8 +28,10 @@ function App() {
       children: [
         { path: '/', element: <HomePage /> },
         { path: '/factory', element: <FactoryPage /> },
-        { path: '/singleton', element: <SingletonPage /> }
-
+        { path: '/singleton', element: <SingletonPage /> },
+        { path: '/decorator', element: <DecoratorPage /> },
+        { path: '/observer', element: <ObserverPage /> },
+        { path: '/strategy', element: <StrategyPage /> },
       ],
     },
   ]);

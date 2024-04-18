@@ -18,8 +18,9 @@ const FactoryPage = () => {
   useEffect(() => {
     async function fetchData() {
       const response = await agent.breweries.getRichmondBreweries();
-      setAllBreweries(response);
-      console.log(response)
+      const henricoResponse = await agent.breweries.getHenricoBreweries();
+      setAllBreweries([...response, ...henricoResponse])
+      console.log([...response, ...henricoResponse])
       // Do something with the response if needed
     }
     fetchData();

@@ -47,7 +47,10 @@ const SingletonPage = () => {
         </Col>
       </Row>
 
-
+      <div>
+        MAP Singleton example
+        also point out the store
+      </div>
 
     </Container>
   );

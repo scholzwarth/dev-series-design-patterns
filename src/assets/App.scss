@@ -1,0 +1,87 @@
+.navbar-primary-app {
+  background: #c0d673;
+  background-repeat: no-repeat;
+  font-weight: normal;
+
+
+  .nav-link {
+    color: black;
+    padding-right: 2.5rem !important;
+  }
+
+  .nav-link.active {
+    color: black !important;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: #5F8b1c;
+  }
+
+  .navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+  }
+
+  .navbar-toggler {
+    color: white;
+    border-color: white;
+  }
+
+  .navbar-toggler {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  .offcanvas-start {
+    top: 300px !important;
+  }
+}
+
+.micro {
+
+  .card-header {
+    background-color: yellow !important;
+    color: black !important;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .card-body {
+    background-color: #F4F4F4 !important;
+    color: #383838 !important;
+    border: none !important;
+  }
+
+}
+
+.brewpub {
+
+  .card-header {
+    background-color: lightseagreen !important;
+    color: black !important;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .card-body {
+    background-color: #F4F4F4 !important;
+    color: #383838 !important;
+    border: none !important;
+  }
+
+}
+
+.regional {
+
+  .card-header {
+    background-color: #FFA500 !important;
+    color: black !important;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .card-body {
+    background-color: #F4F4F4 !important;
+    color: #383838 !important;
+    border: none !important;
+  }
+}

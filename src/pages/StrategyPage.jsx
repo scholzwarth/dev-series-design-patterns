@@ -10,6 +10,11 @@ const StrategyPage = () => {
   const setAllBreweries = useBeerStore(state => state.setAllBreweries);
   const myBreweries = useBeerStore(state => state.myBreweries);
 
+  /*
+    DEV NOTE 
+    this could easily be turned into a singleton! perfect example of creating a single instance of a class that can be used across the app
+    in this case, we would move the "Context" to the store, initiate it once on app load, and then use that same ref always
+  */
   const [context, setContext] = useState(new Context(alphabeticalStrategy));
   const setStrategy = (strategy) => () => {
     setContext(new Context(strategy));
@@ -24,8 +29,7 @@ const StrategyPage = () => {
   useEffect(() => {
     async function fetchData() {
       const response = await agent.breweries.getRichmondBreweries();
-      setAllBreweries([...response, ...henricoResponse])
-      console.log([...response, ...henricoResponse])
+      setAllBreweries([...response])
       // Do something with the response if needed
     }
     fetchData();

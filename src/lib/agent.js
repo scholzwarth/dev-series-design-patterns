@@ -54,9 +54,14 @@ const breweries = {
   getHenricoBreweries: async () => requests.get('https://api.openbrewerydb.org/v1/breweries?by_city=henrico&by_state=virginia'),
 };
 
+const giphy = {
+  //adding my api key in here for the coding exercies... to the degenerates out there, please don't abuse it 
+  search: async (query) => requests.get(`https://api.giphy.com/v1/gifs/search?api_key=54xZwazBGlh8LH7Z3BVtZDobPKRJ4FLn&q=${query}&limit=25`),
+};
 
 const agent = {
-  breweries
+  breweries, 
+  giphy
 };
 
 export default agent;

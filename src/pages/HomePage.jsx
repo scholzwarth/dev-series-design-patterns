@@ -1,13 +1,12 @@
-import { useState, useEffect } from 'react';
-// import agent from '../lib/agent';
+import { useState } from 'react';
+import { Container } from 'react-bootstrap';
 
 const HomePage = () => {
-
   return (
-    <div>
-      <h1>Hello World</h1>
-      <p>purpse</p>
-    </div>
+    <Container>
+      <h1>Dev chat -- Design patterns in web development! </h1>
+
+    </Container>
   );
 };
 

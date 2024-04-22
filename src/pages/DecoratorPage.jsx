@@ -36,7 +36,7 @@ const DecoratorPage = () => {
     <Container>
       <h1>Decorator Examples</h1>
       <p className="mt-4">
-        <p>this is essentially just a high order component. pass in a baby compnont, and some extra deets to it, then send it off</p>
+        this is essentially just a high order component. pass in a baby compnont, and some extra deets to it, then send it off
       </p>
       <Row className="mb-3">
         <Col>
@@ -49,7 +49,8 @@ const DecoratorPage = () => {
                 "wrong" persay, but it's not the best way to do it. The second example cleaner and easier to read. also more modern approach
               </p>
               <p>In the giphy example, we have the GiphyCard component that acts as a decorator. This component takes in a children prop (just a "node" that
-                represents everything inside the component tags), and then displays it</p>
+                represents everything inside the component tags), and then displays it
+              </p>
               <p> this is considered a "decorator" because it ADDS to the inner components passed in.  In general, this pattern makes for a consolidated "feel" to applications
                 and can be a great way to add functionality to components without changing the original component
               </p>

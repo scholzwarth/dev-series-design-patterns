@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { Container, Col, Row, Card } from 'react-bootstrap';
 import useBeerStore from '../stores/beerStore';
+import Map from '../components/Map';
 
 const SingletonPage = () => {
+  const myBreweries = useBeerStore(state => state.myBreweries);
   const resources = [
-    'https://refactoring.guru/design-patterns/factory-method',
-    'https://www.geeksforgeeks.org/factory-method-for-designing-pattern/',
+    'https://refactoring.guru/design-patterns/singleton',
+    'https://dev.to/dealwith/singleton-pattern-in-react-application-1ijj',
     'https://chat.openai.com/'
   ]
 
@@ -51,11 +53,18 @@ const SingletonPage = () => {
         </Col>
       </Row>
 
-      <div>
-        MAP Singleton example
-        also point out the store
-      </div>
-
+      <h2>Add beers to your collection to view on map</h2>
+      <Row>
+        <Col sm={6}><Map /></Col>
+        <Col sm={6}>
+          {myBreweries.map(brewery => (
+            <div key={brewery.id}>
+              <b>{brewery.name}</b>
+              <p>{brewery.address_1} {brewery.city}, {brewery.state}</p>
+              <p>lat: {brewery.latitude}, long: {brewery.longitude}</p>
+            </div>))}
+        </Col>
+      </Row>
     </Container>
   );
 };

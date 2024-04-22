@@ -39,6 +39,8 @@ const BreweryCard = ({ brewery, header, className }) => {
           {brewery.street}
           <br />
           {brewery.phone}
+          <br />
+          lat: {brewery.latitude ?? 'n/a'}, long: {brewery.longitude ?? 'n/a'}
         </Card.Text>
         <Card.Link href={brewery.website_url} target="_blank" rel="noreferrer noopener">
           Visit website

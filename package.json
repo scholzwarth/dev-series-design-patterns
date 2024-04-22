@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@arcgis/core": "^4.29.10",
+    "@arcgis/core": "~4.25.5",
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
     "bootstrap-scss": "^5.3.3",

@@ -6,7 +6,8 @@ const DecoratorPage = () => {
   const resources = [
     'https://refactoring.guru/design-patterns/decorator',
     'https://dev.to/elihood/implementing-a-decorator-design-pattern-within-react-gno',
-    'https://medium.com/@mr.kashif.samman/flexible-and-maintainable-react-native-applications-with-the-decorator-pattern-32d84de576f6'
+    'https://medium.com/@mr.kashif.samman/flexible-and-maintainable-react-native-applications-with-the-decorator-pattern-32d84de576f6',
+    'https://chat.openai.com/'
   ];
   // Define a component to be decorated
   const MyComponent = () => {

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Container, Col, Row, Card } from 'react-bootstrap';
+import useBeerStore from '../stores/beerStore';
 
 const SingletonPage = () => {
   const resources = [
@@ -7,6 +8,8 @@ const SingletonPage = () => {
     'https://www.geeksforgeeks.org/factory-method-for-designing-pattern/',
     'https://chat.openai.com/'
   ]
+
+
 
   return (
     <Container>
@@ -21,9 +24,10 @@ const SingletonPage = () => {
             <Card.Body>
               <Card.Title>Singleton Deets</Card.Title>
               <p>
-                In this example, we are using a factory to create a list of breweries.
-                The factory is a component that takes in a brewery object and returns a component that displays the brewery information.
-                The component returned differs based on the brewery type.
+                In this example, we are using a tenant that has made it's way recently around some of the timmons app - the mapManager.
+                this is a perfect example of a singleton.  The mapManager is a class that is used to manage the map component.  It is a singleton because there should only be one instance of the mapManager, ever.
+
+                Another interesting example of a singleton is the store.  The store is a singleton that is used to manage the state, has custom logic and functions, and is only ever initialized once.
               </p>
               <p>The factory is then used to create a list of breweries.  This is a simple example, but factories can be used to create more complex components as well.</p>
             </Card.Body>
